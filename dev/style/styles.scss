@@ -1,0 +1,44 @@
+@import
+'settings/settings',
+'components/normalize',
+'grid/grid',
+'components/alignment',
+'components/menu',
+'components/media-query';
+
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.full-width-image img {
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  padding: 10px;
+}
+
+p {
+  Margin: 0;
+}
+
+a {
+  color: #ee6a56;
+  text-decoration: underline;
+}
+
+.h1 {
+  font-size: 21px;
+  font-weight: bold;
+  Margin-bottom: 18px;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: bold;
+  Margin-bottom: 12px;
+}

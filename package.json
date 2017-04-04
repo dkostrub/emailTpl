@@ -1,0 +1,52 @@
+{
+  "name": "email-temlate",
+  "version": "1.0.0",
+  "description": "Basic template for Emails.",
+  "main": "gulpfile.babel.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "browser-sync": "^2.18.8",
+    "fs": "0.0.1-security",
+    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-awspublish": "^3.3.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-changed": "^2.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-cli": "^1.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-src": "^1.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.1",
+    "gulp-uncss": "^1.0.6",
+    "gulp-watch": "^4.3.11",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.1",
+    "rimraf": "^2.6.1",
+    "siphon-media-query": "^1.0.0",
+    "yargs": "^7.0.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "start": "cd src && gulp",
+    "build": "cd src && gulp --production"
+  },
+  "author": "Dmitriy Kostrub",
+  "license": "MIT"
+}

@@ -1,0 +1,78 @@
+/* Basics */
+body {
+  width: 100% !important;
+  min-width: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  Margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  color: #333333;
+
+  &.spacer {
+    width: 100%;
+    td {
+      mso-line-height-rule: exactly;
+    }
+  }
+}
+
+tr{
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+td {
+  padding: 0;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  border-collapse: collapse !important;
+}
+
+img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  -ms-interpolation-mode: bicubic;
+  width: auto;
+  max-width: 100%;
+  clear: both;
+}
+
+a img {
+  border: none;
+}
+
+.wrapper {
+  background: #ffffff;
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 auto;
+  Margin: 0 auto;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.webkit {
+  max-width: 600px;
+  background: #ffffff;
+}
+
+/* Windows Phone Viewport Fix */
+@-ms-viewport {
+  width: device-width;
+}
+
