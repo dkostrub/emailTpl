@@ -44,8 +44,8 @@
     ]
   },
   "scripts": {
-    "start": "cd src && gulp",
-    "build": "cd src && gulp --production"
+    "start": "gulp",
+    "build": "gulp --production"
   },
   "author": "Dmitriy Kostrub",
   "license": "MIT"

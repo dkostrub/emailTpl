@@ -82,10 +82,9 @@ function sass() {
         .pipe($.if(!PRODUCTION, $.sourcemaps.init()))
         .pipe(changed(path.build.css))
         .pipe($.sass().on('error', $.sass.logError))
-        // .pipe(concat('style.css'))
         .pipe($.if(PRODUCTION, $.uncss(
             {
-                html: [path.build.html]
+                html: ['build/**/*.html']
             })))
         .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
         .pipe(plumber(errorHandler))
@@ -95,7 +94,7 @@ function sass() {
 }
 
 function inline() {
-    return gulp.src(path.build.html)
+    return gulp.src('build/**/*.html')
         .pipe($.if(PRODUCTION, inliner('build/css/styles.css')))
         .pipe(plumber(errorHandler))
         .pipe(gulp.dest(path.build.html)).on('end', function () {
@@ -136,7 +135,7 @@ function inliner(css) {
             removeLinkTags: false
         })
         .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
-        .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/style.css">', '')
+        .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/styles.css">', '')
         .pipe($.htmlmin, {
             collapseWhitespace: true,
             minifyCSS: true
